@@ -55,7 +55,7 @@ plot(x,p,'r')
 
 
 %% auxiliar function
-
+% REF: https://en.wikipedia.org/wiki/Rice_distribution
 function y = ricepdf(x, k, s)
 s2 = s.^2; % (neater below)
 
