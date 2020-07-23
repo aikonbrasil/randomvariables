@@ -19,7 +19,7 @@ close all
 clear all
 
 %% Simulation Version
-N = 100000;
+N = 10000000;
 sigma = 1/sqrt(2);
 K = 1;
 % Rice parameters
@@ -41,7 +41,7 @@ display(['The Variance of the band base representation of the channel is '...
     num2str(var(hr))])
 display(['The Mean of the band base representation of the channel is '...
     num2str(mean(hr))])
-[a,b] = hist(abs(hr),50);
+[a,b] = hist(abs(hr),100);
 pdfSim=a./trapz(b,a);
 stem(b,pdfSim)
 
