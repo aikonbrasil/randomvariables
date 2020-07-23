@@ -15,6 +15,8 @@
 % number).
 close all
 clear all
+
+%% Simulation Version
 N = 100000;
 sigma = 1/sqrt(2);
 hr = sigma * (randn(1,N) + sqrt(-1) * randn(1,N));
@@ -27,6 +29,7 @@ pdfSim=a./trapz(b,a);
 stem(b,pdfSim)
 
 
+%% Theoretical Version
 hold on
 x = min(b):0.01:max(b);
 p = raylpdf(x,sigma);
